@@ -1,0 +1,21 @@
+﻿const int firstColumnSize = -7;
+const int secondColumnSize = -2;
+const int thirdColumnSize = 30;
+const int fourthColumnSize = 29;
+string horizontalLine = new('-', -firstColumnSize - secondColumnSize + thirdColumnSize + fourthColumnSize + 3);
+
+WriteLine(horizontalLine);
+WriteLine($"{"Type", firstColumnSize} {"Byte(s) of memory", 0} {"Min", 15} {"Max", 29}");
+WriteLine(horizontalLine);
+WriteLine($"{"sbyte", firstColumnSize} {sizeof(sbyte), secondColumnSize} {sbyte.MinValue, thirdColumnSize} {sbyte.MaxValue, fourthColumnSize}");
+WriteLine($"{"byte", firstColumnSize} {sizeof(byte), secondColumnSize} {byte.MinValue, thirdColumnSize} {byte.MaxValue, fourthColumnSize}");
+WriteLine($"{"short", firstColumnSize} {sizeof(short), secondColumnSize} {short.MinValue, thirdColumnSize} {short.MaxValue, fourthColumnSize}");
+WriteLine($"{"ushort", firstColumnSize} {sizeof(ushort), secondColumnSize} {ushort.MinValue, thirdColumnSize} {ushort.MaxValue, fourthColumnSize}");
+WriteLine($"{"int", firstColumnSize} {sizeof(int), secondColumnSize} {int.MinValue, thirdColumnSize} {int.MaxValue, fourthColumnSize}");
+WriteLine($"{"uint", firstColumnSize} {sizeof(uint), secondColumnSize} {uint.MinValue, thirdColumnSize} {uint.MaxValue, fourthColumnSize}");
+WriteLine($"{"long", firstColumnSize} {sizeof(long), secondColumnSize} {long.MinValue, thirdColumnSize} {long.MaxValue, fourthColumnSize}");
+WriteLine($"{"ulong", firstColumnSize} {sizeof(ulong), secondColumnSize} {ulong.MinValue, thirdColumnSize} {ulong.MaxValue, fourthColumnSize}");
+WriteLine($"{"float", firstColumnSize} {sizeof(float), secondColumnSize} {float.MinValue, thirdColumnSize} {float.MaxValue, fourthColumnSize}");
+WriteLine($"{"double", firstColumnSize} {sizeof(double), secondColumnSize} {double.MinValue, thirdColumnSize} {double.MaxValue, fourthColumnSize}");
+WriteLine($"{"decimal", firstColumnSize} {sizeof(decimal), secondColumnSize} {decimal.MinValue, thirdColumnSize} {decimal.MaxValue, fourthColumnSize}");
+WriteLine(horizontalLine);
